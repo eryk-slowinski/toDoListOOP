@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #52ACFF;
+    background-image: linear-gradient(180deg, #52ACFF 25%, rgb(241, 211, 39) 100%);
+    font-family: 'Solway', serif;
+}
+
+div.wrap h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 65px;
+    text-align: center;
+    color: #234099;
+}
+
+div.add,
+div.search {
+    margin: 7px 25px;
+    display: inline-block;
+}
+
+ul.taskslist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    max-width: 100%;
+    padding: 0;
+}
+
+ul.taskslist li {
+    margin: 7px;
+}
+
+div.add button {
+    background-color: cornsilk;
+    margin-left: 10px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    padding: 3px 5px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+li button {
+    font-size: 45px;
+    background-color: transparent;
+    color: red;
+    border: none;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+div.list {
+    width: 90%;
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+div.counter {
+    font-size: 20px;
+    text-align: center;
+}
+
+div.inputs {
+    text-align: center;
+}
+
+.active {
+    font-weight: bold;
+}
+
+@media (orientation: portrait) and (max-width: 360px) {
+    div.wrap h1 {
+        font-size: 46px;
+    }
+}
